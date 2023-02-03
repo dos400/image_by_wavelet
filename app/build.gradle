@@ -7,6 +7,9 @@ android {
     namespace 'uz.hamroev.imagebywavelet'
     compileSdk 33
 
+    buildFeatures {
+        viewBinding true
+    }
     defaultConfig {
         applicationId "uz.hamroev.imagebywavelet"
         minSdk 21

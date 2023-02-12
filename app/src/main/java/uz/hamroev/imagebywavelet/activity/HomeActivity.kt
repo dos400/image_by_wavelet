@@ -1,10 +1,14 @@
 package uz.hamroev.imagebywavelet.activity
 
+import android.Manifest
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.app.ActivityCompat
 import androidx.navigation.Navigation
+import com.permissionx.guolindev.PermissionX
 import uz.hamroev.imagebywavelet.R
 import uz.hamroev.imagebywavelet.cache.Cache
 import uz.hamroev.imagebywavelet.databinding.ActivityHomeBinding
@@ -19,10 +23,34 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
         Cache.init(this)
 
+        PermissionX.init(this)
+            .permissions(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE)
+            .request { allGranted, grantedList, deniedList ->
+                if (allGranted) {
+                    Toast.makeText(this, "All permissions are granted", Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(this, "These permissions are denied: $deniedList", Toast.LENGTH_LONG).show()
+                }
+            }
 
 
+//        PermissionX.init(this)
+//            .permissions(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE)
+//            .onExplainRequestReason { scope, deniedList ->
+//                scope.showRequestReasonDialog(deniedList, "Core fundamental are based on these permissions", "OK", "Cancel")
+//            }
+//            .onForwardToSettings { scope, deniedList ->
+//                scope.showForwardToSettingsDialog(deniedList, "You need to allow necessary permissions in Settings manually", "OK", "Cancel")
+//            }
+//            .request { allGranted, grantedList, deniedList ->
+//                if (allGranted) {
+//                    Toast.makeText(this, "All permissions are granted", Toast.LENGTH_LONG).show()
+//                } else {
+//                    Toast.makeText(this, "These permissions are denied: $deniedList", Toast.LENGTH_LONG).show()
+//                }
+//            }
 
-
+        checkLanguage()
 
 
     }

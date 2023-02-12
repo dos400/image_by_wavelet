@@ -27,4 +27,15 @@ object Cache {
             }
         }
 
+    var filterName: String?
+        get() = sharedPreferences.getString("filtername", "none")
+        set(value) = sharedPreferences.edit() {
+            if (value != null) {
+                it.putString("filtername", value)
+            }
+        }
+
+
+
+
    }

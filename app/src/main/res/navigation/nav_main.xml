@@ -9,5 +9,63 @@
         android:id="@+id/homeFragment"
         android:name="uz.hamroev.imagebywavelet.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_authorsFragment"
+            app:destination="@id/authorsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_savedFragment"
+            app:destination="@id/savedFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_downloadedFragment"
+            app:destination="@id/downloadedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="uz.hamroev.imagebywavelet.fragment.AboutAppFragment"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app" />
+    <fragment
+        android:id="@+id/authorsFragment"
+        android:name="uz.hamroev.imagebywavelet.fragment.AuthorsFragment"
+        android:label="fragment_authors"
+        tools:layout="@layout/fragment_authors" />
+    <fragment
+        android:id="@+id/downloadedFragment"
+        android:name="uz.hamroev.imagebywavelet.fragment.DownloadedFragment"
+        android:label="fragment_downloaded"
+        tools:layout="@layout/fragment_downloaded" >
+        <action
+            android:id="@+id/action_downloadedFragment_to_imageZoomFragment"
+            app:destination="@id/imageZoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="uz.hamroev.imagebywavelet.fragment.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_savedFragment_to_imageZoomFragment"
+            app:destination="@id/imageZoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageZoomFragment"
+        android:name="uz.hamroev.imagebywavelet.fragment.ImageZoomFragment"
+        android:label="fragment_image_zoom"
+        tools:layout="@layout/fragment_image_zoom" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="uz.hamroev.imagebywavelet.fragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_imageZoomFragment"
+            app:destination="@id/imageZoomFragment" />
+    </fragment>
 </navigation>

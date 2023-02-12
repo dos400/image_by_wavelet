@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Image by wavelet</string>
+    <string name="app_name">Rasm Wavelet orqali</string>
+
+
+    <string name="main">Asosiy</string>
+    <string name="save">Saqlanganlar</string>
+    <string name="info">Ilova haqida</string>
+    <string name="downloaded">Yuklab olinganlar</string>
+    <string name="language">Til</string>
+    <string name="share">Yuborish</string>
+    <string name="rate">Baholash</string>
+    <string name="authors">Mualliflar</string>
+    <string name="exit">Chiqish</string>
+
 </resources>

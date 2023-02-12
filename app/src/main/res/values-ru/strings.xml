@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Image by wavelet</string>
+    <string name="app_name">Изображение по вейвлету</string>
+
+
+    <string name="main">Главный</string>
+    <string name="save">Сохранено</string>
+    <string name="info">О приложении</string>
+    <string name="downloaded">Скачано</string>
+    <string name="language">Язык</string>
+    <string name="share">Поделиться</string>
+    <string name="rate">Оцените нас</string>
+    <string name="authors">Авторы</string>
+    <string name="exit">Выход</string>
+
 </resources>

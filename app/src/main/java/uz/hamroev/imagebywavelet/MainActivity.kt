@@ -13,9 +13,12 @@ import android.view.animation.AnimationUtils
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.lifecycleScope
+import com.daimajia.androidanimations.library.Techniques
+import com.daimajia.androidanimations.library.YoYo
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import uz.hamroev.imagebywavelet.activity.HomeActivity
+import uz.hamroev.imagebywavelet.cache.Cache
 import uz.hamroev.imagebywavelet.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -27,11 +30,17 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        Cache.init(this)
 
         hideSystemBars()
         supportActionBar?.hide()
-        startAnimation()
+       // startAnimation()
+
+
+        YoYo.with(Techniques.FadeIn)
+            .duration(900)
+            .repeat(1)
+            .playOn(findViewById(R.id.title_app_name));
 
         lifecycleScope.launch {
             delay(2700)
@@ -69,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             binding.infoApp.justificationMode = LineBreaker.JUSTIFICATION_MODE_INTER_WORD
         }
 
-        binding.titleAppName.animateText("History Uz")
+        binding.titleAppName.animateText(resources.getString(R.string.app_name))
         binding.titleAppName.setCharacterDeley(100)
 
 
@@ -77,6 +86,8 @@ class MainActivity : AppCompatActivity() {
         binding.versionTv.startAnimation(animVersion)
         binding.image.startAnimation(animImage)
         binding.infoApp.startAnimation(animImage)
+
+
 
 
     }

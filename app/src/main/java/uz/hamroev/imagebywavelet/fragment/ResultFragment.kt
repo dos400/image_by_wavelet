@@ -42,7 +42,6 @@ class ResultFragment : Fragment() {
         val imageFilter = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             arguments?.getSerializable("filter", ImageFilter::class.java)
         } else {
-            TODO("VERSION.SDK_INT < TIRAMISU")
             arguments?.getSerializable("filter") as ImageFilter
         }
         binding.filterName.text = imageFilter?.filterName

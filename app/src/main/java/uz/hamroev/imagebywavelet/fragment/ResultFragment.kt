@@ -85,8 +85,9 @@ class ResultFragment : Fragment() {
 
 
     private fun saveImage() {
-        val path = Environment.getExternalStorageDirectory()
-            .toString()
+        val defaultPath = Environment.getExternalStorageDirectory().toString()
+        val path = "${defaultPath}/image_by_wavelet"
+        File(path).mkdirs()
         val fOut: OutputStream?
         val fileName = Date().time
         val file = File(path, "$fileName.jpg")

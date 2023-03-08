@@ -25,6 +25,8 @@ class ImageZoomFragment : Fragment() {
         }
         // this window can zoom any image
 
+        
+
         return binding.root
     }
 

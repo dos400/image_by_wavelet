@@ -36,6 +36,7 @@ class HomeActivity : AppCompatActivity() {
         Cache.init(this)
 
 
+
         checkLanguage()
 
         if(!checkPermission()) requestPermission()

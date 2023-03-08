@@ -13,4 +13,7 @@
     <string name="authors">Авторы</string>
     <string name="exit">Выход</string>
 
+    <string name="about_app">Info</string>
+
+
 </resources>

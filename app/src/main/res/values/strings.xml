@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Image by Wavelet</string>
 
-    <!--    TODO: this navigation menu names in down-->
+    <!--   this navigation menu names in down-->
     <string name="main">Main</string>
     <string name="save">Saved</string>
     <string name="info">About app</string>
@@ -11,6 +11,8 @@
     <string name="rate">Rate us</string>
     <string name="authors">Authors</string>
     <string name="exit">Exit</string>
+
+    <string name="about_app">Image fusion is an extensively discussed topic for improving the information content of images. The main objective of image fusion algorithm is to combine information from multiple images of a scene. The result of image fusion is a new image which is more feasible for human and machine perception for further image processing operations such as segmentation, feature extraction and object recognition. This paper explores the possibility of using the specialized wavelet approach in image fusion and de-noising. These algorithms are compared on digital microscope images. The approach uses an affine transform based image registration followed by wavelet fusion. Then the least squares support vector machine based frequency band selection for image denoising can be incorporated to reduce the artifacts. The indentations are to maximize resolution, decrease artifacts and blurring in the final super image. To accelerate the entire operations, it is proposed to offload the image processing algorithms to a hardware platform thereby the performance can be improved. FPGAs provide an excellent platform in implementing real time image processing applications, since inherent parallelism of the architecture can be exploited explicitly.</string>
 
 
 </resources>

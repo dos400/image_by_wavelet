@@ -54,5 +54,14 @@ dependencies {
     implementation 'com.github.mukeshsolanki:photofilter:2.0.2'
     //permissionX
     implementation 'com.guolindev.permissionx:permissionx:1.7.1'
+    //lottie Animation
+    implementation 'com.airbnb.android:lottie:4.2.2'
+    // circle image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // fragment
+    implementation 'androidx.fragment:fragment-ktx:1.5.5'
+    // pick image from gallery or camera
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+    
 
 }

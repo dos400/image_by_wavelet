@@ -24,6 +24,8 @@ class AboutAppFragment : Fragment() {
             findNavController().popBackStack()
         }
         // here will be about app info
+        binding.aboutAppInfoTv.text = activity?.resources?.getString(R.string.about_app)
+
 
         return binding.root
     }

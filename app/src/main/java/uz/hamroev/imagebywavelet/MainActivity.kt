@@ -22,6 +22,7 @@ import uz.hamroev.imagebywavelet.cache.Cache
 import uz.hamroev.imagebywavelet.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var binding: ActivityMainBinding
 
     @RequiresApi(Build.VERSION_CODES.Q)

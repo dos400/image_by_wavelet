@@ -41,7 +41,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
 
@@ -56,9 +56,14 @@ class HomeFragment : Fragment() {
             listImageFilter,
             object : ImageFilterAdapter.OnClickListerImageFilterItem {
                 override fun onClick(imageFilter: ImageFilter, position: Int) {
-                    val bundle: Bundle = Bundle()
-                    bundle.putSerializable("filter", imageFilter)
-                    findNavController().navigate(R.id.resultFragment, bundle)
+//                    val bundle: Bundle = Bundle()
+//                    bundle.putSerializable("filter", imageFilter)
+                    findNavController().navigate(R.id.resultFragment)
+//
+
+//                    val intent = Intent(requireContext(), PageActivity::class.java)
+////                    intent.putExtra("filter", imageFilter)
+//                    startActivity(intent)
                 }
             })
         binding.rvTheme.adapter = imageFilterAdapter
@@ -78,13 +83,9 @@ class HomeFragment : Fragment() {
                     }
                     2 -> {
                         binding.drawerLayout.close()
-                        findNavController().navigate(R.id.downloadedFragment)
-                    }
-                    3 -> {
-                        binding.drawerLayout.close()
                         findNavController().navigate(R.id.aboutAppFragment)
                     }
-                    4 -> {
+                    3 -> {
                         binding.drawerLayout.closeDrawers()
                         val alertDialog = android.app.AlertDialog.Builder(binding.root.context)
                         val dialog = alertDialog.create()
@@ -121,11 +122,11 @@ class HomeFragment : Fragment() {
                         dialog.show()
 
                     }
-                    5 -> {
+                    4 -> {
                         binding.drawerLayout.close()
                         findNavController().navigate(R.id.authorsFragment)
                     }
-                    6 -> {
+                    5 -> {
                         try {
                             val intent = Intent(Intent.ACTION_SEND)
                             intent.type = "text/plain"
@@ -138,7 +139,7 @@ class HomeFragment : Fragment() {
                         }
                         binding.drawerLayout.close()
                     }
-                    7 -> {
+                    6 -> {
                         try {
                             val uri: Uri =
                                 Uri.parse("market://details?id=${activity!!.packageName}")
@@ -154,7 +155,7 @@ class HomeFragment : Fragment() {
                         }
                         binding.drawerLayout.close()
                     }
-                    8 -> {
+                    7 -> {
                         activity?.finish()
                     }
                 }
@@ -172,30 +173,60 @@ class HomeFragment : Fragment() {
     private fun loadImageFilter() {
         listImageFilter = ArrayList()
         listImageFilter.clear()
-        listImageFilter.add(ImageFilter("None", None(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("AutoFix", AutoFix(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Brightness", Brightness(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Contrast", Contrast(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Temperature",Temperature(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Grayscale", Grayscale(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("CrossProcess", CrossProcess(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Documentary", Documentary(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("DuoTone", DuoTone(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Tint", Tint(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Fill-Light", FillLight(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("FishEye", FishEye(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Grain", Grain(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Highlight", Highlight(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Lomoish", Lomoish(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Flip Horizontally", FlipHorizontally(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Flip Vertically", FlipVertically(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Negative", Negative(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Posterize", Posterize(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Rotate", Rotate(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Saturate", Saturate(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Sepia", Sepia(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Sharpen", Sharpen(), R.drawable.eiffel))
-        listImageFilter.add(ImageFilter("Vignette",Vignette(), R.drawable.eiffel))
+        listImageFilter.add(ImageFilter("None", None(), R.drawable.filter_none))
+        listImageFilter.add(ImageFilter("AutoFix", AutoFix(), R.drawable.filter_autofix))
+        listImageFilter.add(ImageFilter("Brightness", Brightness(), R.drawable.filter_brightness))
+        listImageFilter.add(ImageFilter("Contrast", Contrast(), R.drawable.filter_contrast))
+        listImageFilter.add(
+            ImageFilter(
+                "Temperature",
+                Temperature(),
+                R.drawable.filter_temperature
+            )
+        )
+        listImageFilter.add(ImageFilter("Grayscale", Grayscale(), R.drawable.filter_greyscale))
+        listImageFilter.add(
+            ImageFilter(
+                "CrossProcess",
+                CrossProcess(),
+                R.drawable.filter_crossprocess
+            )
+        )
+        listImageFilter.add(
+            ImageFilter(
+                "Documentary",
+                Documentary(),
+                R.drawable.filter_documentary
+            )
+        )
+        listImageFilter.add(ImageFilter("DuoTone", DuoTone(), R.drawable.filter_duotone))
+        listImageFilter.add(ImageFilter("Tint", Tint(), R.drawable.filter_tint))
+        listImageFilter.add(ImageFilter("Fill-Light", FillLight(), R.drawable.filter_filllight))
+        listImageFilter.add(ImageFilter("FishEye", FishEye(), R.drawable.filter_fisheye))
+        listImageFilter.add(ImageFilter("Grain", Grain(), R.drawable.filter_grain))
+        listImageFilter.add(ImageFilter("Highlight", Highlight(), R.drawable.filter_highlight))
+        listImageFilter.add(ImageFilter("Lomoish", Lomoish(), R.drawable.filter_fomoish))
+        listImageFilter.add(
+            ImageFilter(
+                "Flip Horizontally",
+                FlipHorizontally(),
+                R.drawable.filter_fliphorizontal
+            )
+        )
+        listImageFilter.add(
+            ImageFilter(
+                "Flip Vertically",
+                FlipVertically(),
+                R.drawable.filter_flipvertical
+            )
+        )
+        listImageFilter.add(ImageFilter("Negative", Negative(), R.drawable.filter_negative))
+        listImageFilter.add(ImageFilter("Posterize", Posterize(), R.drawable.filter_posterize))
+        listImageFilter.add(ImageFilter("Rotate", Rotate(), R.drawable.filter_rotate))
+        listImageFilter.add(ImageFilter("Saturate", Saturate(), R.drawable.filter_saturate))
+        listImageFilter.add(ImageFilter("Sepia", Sepia(), R.drawable.filter_sepia))
+        listImageFilter.add(ImageFilter("Sharpen", Sharpen(), R.drawable.filter_sharpen))
+        listImageFilter.add(ImageFilter("Vignette", Vignette(), R.drawable.filter_vignette))
     }
 
     private fun loadNav() {
@@ -206,12 +237,6 @@ class HomeFragment : Fragment() {
             Nav(
                 requireActivity().resources.getString(R.string.save),
                 R.drawable.fi_bookmark
-            )
-        )
-        listNav.add(
-            Nav(
-                requireActivity().resources.getString(R.string.downloaded),
-                R.drawable.fi_download
             )
         )
         listNav.add(Nav(requireActivity().resources.getString(R.string.info), R.drawable.fi_info))

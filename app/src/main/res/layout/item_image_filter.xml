@@ -22,7 +22,7 @@
 
             <ImageView
                 android:id="@+id/image_filter"
-                android:src="@drawable/eiffel"
+                android:src="@drawable/filter_none"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 

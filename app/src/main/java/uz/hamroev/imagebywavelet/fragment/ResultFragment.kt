@@ -19,6 +19,9 @@ import com.github.dhaval2404.imagepicker.ImagePicker
 import com.mukesh.imageproccessing.OnProcessingCompletionListener
 import com.mukesh.imageproccessing.PhotoFilter
 import com.mukesh.imageproccessing.filters.AutoFix
+import com.mukesh.imageproccessing.filters.Grain
+import com.mukesh.imageproccessing.filters.Grayscale
+import com.mukesh.imageproccessing.filters.Highlight
 import uz.hamroev.historyuz.utils.toast
 import uz.hamroev.imagebywavelet.R
 import uz.hamroev.imagebywavelet.constants.Constants
@@ -47,7 +50,6 @@ class ResultFragment : Fragment() {
 //        val imageFilter = arguments?.getSerializable("filter") as ImageFilter
 //
 //        binding.filterName.text = imageFilter.filterName
-
 
 
         binding.backButton.setOnClickListener {
@@ -88,7 +90,6 @@ class ResultFragment : Fragment() {
                 }
 
 
-
         }
 
         binding.getImageFromCamera.setOnClickListener {
@@ -100,8 +101,6 @@ class ResultFragment : Fragment() {
                 .createIntent {
                     startForProfileImageResult.launch(it)
                 }
-
-
 
 
         }
@@ -127,17 +126,8 @@ class ResultFragment : Fragment() {
                 binding.imageDefault.setImageURI(fileUri)
                 binding.imageDefault.tag = "img"
 
-                var result:Bitmap
-                photoFilter = PhotoFilter(binding.imageAfterFilter, object :
-                    OnProcessingCompletionListener {
-                    override fun onProcessingComplete(bitmap: Bitmap) {
-                        result = bitmap
-                    }
-                })
-
-                val bitmap = BitmapFactory.decodeFile(fileUri.path)
-                photoFilter.applyEffect(bitmap, AutoFix())
-
+                var bitmap = BitmapFactory.decodeFile(fileUri.path)
+                photoFilter.applyEffect(bitmap, Grayscale())
 
 
             } else if (resultCode == ImagePicker.RESULT_ERROR) {

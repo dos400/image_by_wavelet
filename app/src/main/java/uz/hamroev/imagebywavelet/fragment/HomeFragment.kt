@@ -56,14 +56,8 @@ class HomeFragment : Fragment() {
             listImageFilter,
             object : ImageFilterAdapter.OnClickListerImageFilterItem {
                 override fun onClick(imageFilter: ImageFilter, position: Int) {
-//                    val bundle: Bundle = Bundle()
-//                    bundle.putSerializable("filter", imageFilter)
+                   Cache.filterName = imageFilter.filterName
                     findNavController().navigate(R.id.resultFragment)
-//
-
-//                    val intent = Intent(requireContext(), PageActivity::class.java)
-////                    intent.putExtra("filter", imageFilter)
-//                    startActivity(intent)
                 }
             })
         binding.rvTheme.adapter = imageFilterAdapter
@@ -120,6 +114,7 @@ class HomeFragment : Fragment() {
 
 
                         dialog.show()
+
 
                     }
                     4 -> {

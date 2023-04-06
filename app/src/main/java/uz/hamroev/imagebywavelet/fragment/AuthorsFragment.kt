@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import uz.hamroev.imagebywavelet.R
 import uz.hamroev.imagebywavelet.adapters.UserAdapter
+import uz.hamroev.imagebywavelet.cache.Cache
 import uz.hamroev.imagebywavelet.databinding.FragmentAuthorsBinding
 import uz.hamroev.imagebywavelet.model.MyUser
 
@@ -19,7 +20,7 @@ class AuthorsFragment : Fragment() {
     private lateinit var list: ArrayList<MyUser>
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         binding = FragmentAuthorsBinding.inflate(layoutInflater, container, false)
 
@@ -38,9 +39,61 @@ class AuthorsFragment : Fragment() {
     private fun loadUsers() {
         list = ArrayList()
         list.clear()
-        list.add(MyUser("Doston Hamroyev","Android dasturchi ", R.drawable.fi_users))
-        list.add(MyUser("Doston Hamroyev","Android dasturchi ", R.drawable.fi_users))
-        list.add(MyUser("Doston Hamroyev","Android dasturchi ", R.drawable.fi_users))
+        when (Cache.language) {
+            "uz" -> {
+                list.add(
+                    MyUser(
+                        "Nuraliyev \nFaxriddin \nMurodillayevich",
+                        "Doctor of Science\n" +
+                                "Professor of the Department of Audiovisual Technologies",
+                        R.drawable.ic_nuraliyev_faxriddin
+                    )
+                )
+                list.add(
+                    MyUser(
+                        "Abdumajidov \nDostonbek \nBotir o'g'li",
+                        "TATU magistr talabasi \nVideotexnalogiyalar yo'nalishi",
+                        R.drawable.ic_doston_abdumajidov
+                    )
+                )
+            }
+            "ru" -> {
+                list.add(
+                    MyUser(
+                        "Nuraliyev \nFaxriddin \nMurodillayevich",
+                        "Doctor of Science\n" +
+                                "Professor of the Department of Audiovisual Technologies",
+                        R.drawable.ic_nuraliyev_faxriddin
+                    )
+                )
+                list.add(
+                    MyUser(
+                        "Abdumajidov \nDostonbek \nBotir o'g'li",
+                        "TATU magistr talabasi \nVideotexnalogiyalar yo'nalishi",
+                        R.drawable.ic_doston_abdumajidov
+                    )
+                )
+
+            }
+            "en" -> {
+                list.add(
+                    MyUser(
+                        "Nuraliyev \nFaxriddin \nMurodillayevich",
+                        "Doctor of Science\nProfessor of the Department of Audiovisual Technologies",
+                        R.drawable.ic_nuraliyev_faxriddin
+                    )
+                )
+                list.add(
+                    MyUser(
+                        "Abdumajidov \nDostonbek \nBotir o'g'li",
+                        "TATU magistr talabasi \nVideotexnalogiyalar yo'nalishi",
+                        R.drawable.ic_doston_abdumajidov
+                    )
+                )
+
+            }
+        }
+
     }
 
 

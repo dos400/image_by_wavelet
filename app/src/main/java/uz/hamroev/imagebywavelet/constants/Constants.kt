@@ -1,5 +1,5 @@
 package uz.hamroev.imagebywavelet.constants
 
 object Constants {
-    const val DIRECTORY_NAME = "image_by_wavelet"
+    const val DIRECTORY_NAME = "Image_By_Wavelet"
 }

@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             .playOn(findViewById(R.id.title_app_name));
 
         lifecycleScope.launch {
-            delay(2700)
+            delay(1700)
             startActivity(Intent(this@MainActivity, HomeActivity::class.java))
             finish()
         }

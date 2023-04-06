@@ -2,6 +2,7 @@ package uz.hamroev.imagebywavelet.cache
 
 import android.content.Context
 import android.content.SharedPreferences
+import java.io.File
 
 object Cache {
 
@@ -28,10 +29,18 @@ object Cache {
         }
 
     var filterName: String?
-        get() = sharedPreferences.getString("filtername", "none")
+        get() = sharedPreferences.getString("filtername", "None")
         set(value) = sharedPreferences.edit() {
             if (value != null) {
                 it.putString("filtername", value)
+            }
+        }
+
+    var imageFile: String?
+        get() = sharedPreferences.getString("imagefile", "None")
+        set(value) = sharedPreferences.edit() {
+            if (value != null) {
+                it.putString("imagefile", value)
             }
         }
 
@@ -39,3 +48,4 @@ object Cache {
 
 
    }
+

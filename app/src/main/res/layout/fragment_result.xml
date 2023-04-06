@@ -23,6 +23,10 @@
                 android:id="@+id/back_button"
                 android:layout_width="56dp"
                 android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp"
@@ -51,6 +55,26 @@
                 app:layout_constraintLeft_toRightOf="@id/back_button"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <LinearLayout
+                android:id="@+id/info_button"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/fi_info_white" />
+
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -76,11 +100,11 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="250dp"
@@ -130,12 +154,15 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:padding="10dp">
 
                             <ImageView
-                                android:scaleType="centerCrop"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
                                 android:src="@drawable/fi_gallery" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -152,6 +179,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:padding="10dp">
 
                             <ImageView
@@ -180,11 +210,11 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="250dp"
@@ -223,16 +253,21 @@
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card_save_button"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_margin="10dp"
                         android:elevation="6dp"
+                        android:visibility="gone"
                         app:cardCornerRadius="12dp"
                         app:cardElevation="6dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:padding="10dp">
 
                             <ImageView
@@ -243,6 +278,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card_share_button"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_margin="10dp"
@@ -253,6 +289,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:padding="10dp">
 
                             <ImageView
@@ -263,6 +302,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card_download_button"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_margin="10dp"
@@ -273,6 +313,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:padding="10dp">
 
                             <ImageView

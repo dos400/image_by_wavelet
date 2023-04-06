@@ -1,8 +1,10 @@
-package uz.hamroev.historyuz.utils
+package uz.hamroev.imagebywavelet.utils
 
 import android.content.Context
+import android.content.Intent
 import android.content.res.Resources
 import android.os.Build
+import android.os.Bundle
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.util.TypedValue
@@ -16,6 +18,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.FontRes
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
+import java.io.Serializable
 import java.text.DecimalFormat
 
 
@@ -158,4 +161,14 @@ fun View.ripple(): View {
     setBackgroundResource(value.resourceId)
     isFocusable = true // Required for some view types
     return this
+}
+
+inline fun <reified T : java.io.Serializable> Bundle.serializable(key: String): T? = when {
+    Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU -> getSerializable(key, T::class.java)
+    else -> @Suppress("DEPRECATION") getSerializable(key) as? T
+}
+
+inline fun <reified T : Serializable> Intent.serializable(key: String): T? = when {
+    Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU -> getSerializableExtra(key, T::class.java)
+    else -> @Suppress("DEPRECATION") getSerializableExtra(key) as? T
 }

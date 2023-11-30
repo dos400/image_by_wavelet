@@ -36,7 +36,6 @@ class HomeActivity : AppCompatActivity() {
         Cache.init(this)
 
 
-
         checkLanguage()
 
         if(!checkPermission()) requestPermission()
@@ -85,6 +84,7 @@ class HomeActivity : AppCompatActivity() {
             result == PackageManager.PERMISSION_GRANTED && result1 == PackageManager.PERMISSION_GRANTED
         }
     }
+
     private fun requestPermission() {
         if (SDK_INT >= Build.VERSION_CODES.R) {
             try {

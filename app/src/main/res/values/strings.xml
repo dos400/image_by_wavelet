@@ -17,29 +17,176 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="none">None</string>
-    <string name="autoFix">AutoFix</string>
-    <string name="brightness">Brightness</string>
-    <string name="contrast">Contrast</string>
-    <string name="temperature">Temperature</string>
-    <string name="grayscale">Grayscale</string>
-    <string name="crossProcess">CrossProcess</string>
-    <string name="documentary">Documentary</string>
-    <string name="duoTone">DuoTone</string>
-    <string name="tint">Tint</string>
-    <string name="fill_light">Fill-Light</string>
-    <string name="fishEye">FishEye</string>
-    <string name="grain">Grain</string>
-    <string name="highlight">Highlight</string>
-    <string name="lomoish">Lomoish</string>
-    <string name="flip_horizontal">Flip Horizontally</string>
-    <string name="flip_vertical">Flip Vertically</string>
-    <string name="negative">Negative</string>
-    <string name="posterize">Posterize</string>
-    <string name="rotate">Rotate</string>
-    <string name="saturate">Saturate</string>
-    <string name="sepia">Sepia</string>
-    <string name="sharpen">Sharpen</string>
-    <string name="vignette">Vignette</string>
+    <string name="autoFix">The Autofix filter is a type of image filter that is commonly used in photo editing software. It is designed to automatically adjust the brightness, contrast, and color balance of an image in order to improve its overall appearance. The Autofix filter can be a quick and easy way to improve the look of an image without requiring extensive manual adjustments.
+
+The Autofix filter works by analyzing the image and identifying areas that could benefit from adjustment. It then automatically adjusts the brightness, contrast, and color balance of the image to create a more visually pleasing result. The adjustments made by the Autofix filter are typically subtle, but they can have a significant impact on the overall look of the image.
+
+One of the advantages of using the Autofix filter is that it can save time when editing large numbers of images. By quickly applying the Autofix filter to a batch of images, you can improve their appearance without having to make individual adjustments to each one. However, it is important to note that the Autofix filter may not always produce the desired result, especially if the image has specific issues that require manual adjustment.
+
+Overall, the Autofix filter can be a useful tool for improving the appearance of an image quickly and easily, but it should be used with some caution to ensure that it does not produce unexpected or undesired results.</string>
+    <string name="brightness">The Brightness filter is a type of image filter that adjusts the overall brightness of an image by increasing or decreasing the intensity of the pixels. This can be useful when an image is too dark or too bright, or when you want to make certain parts of an image stand out.
+
+The Brightness filter works by adjusting the value of each pixel in the image. If you increase the brightness, the pixel values will become higher, resulting in a brighter image. Conversely, if you decrease the brightness, the pixel values will become lower, resulting in a darker image.
+
+Most photo editing software includes a Brightness filter that allows you to adjust the brightness of an image. Typically, this filter will have a slider that allows you to increase or decrease the brightness by a certain amount. Some software may also include a Brightness/Contrast filter, which allows you to adjust both the brightness and the contrast of an image at the same time.
+
+When using the Brightness filter, it is important to be careful not to overdo it. Increasing the brightness too much can result in a washed-out or over-exposed look, while decreasing the brightness too much can make the image look muddy and dull. It is also important to consider how changes to the brightness will affect other aspects of the image, such as the contrast and color balance.</string>
+    <string name="contrast">The Contrast filter is a type of image filter that adjusts the difference between the light and dark areas of an image. Specifically, the Contrast filter increases or decreases the range of tonal values in an image, which can make the image appear more or less vibrant.
+
+When the Contrast filter is increased, the light areas of the image will become lighter and the dark areas will become darker, resulting in a greater difference between the two. This can make the image appear more dynamic and visually interesting. Conversely, when the Contrast filter is decreased, the light and dark areas will become more similar, resulting in a flatter and less vibrant image.
+
+Most photo editing software includes a Contrast filter that allows you to adjust the contrast of an image. Typically, this filter will have a slider that allows you to increase or decrease the contrast by a certain amount. Some software may also include a Brightness/Contrast filter, which allows you to adjust both the brightness and the contrast of an image at the same time.
+
+When using the Contrast filter, it is important to be careful not to overdo it. Increasing the contrast too much can result in a harsh, unnatural look, while decreasing the contrast too much can make the image appear washed out and lacking in depth. It is also important to consider how changes to the contrast will affect other aspects of the image, such as the brightness and color balance.</string>
+    <string name="temperature">The Temperature filter is a type of image filter that adjusts the color temperature of an image. Specifically, it changes the balance between warm colors (such as reds and yellows) and cool colors (such as blues and greens).
+
+In photography, color temperature is measured in degrees Kelvin (K), with higher values representing cooler colors and lower values representing warmer colors. The Temperature filter adjusts the color temperature of an image by shifting its color balance along this scale.
+
+For example, if an image has a yellowish or orange tint, it may have a warm color temperature. Increasing the Temperature filter can shift the color balance towards cooler colors, resulting in a bluer or greener tint. Conversely, if an image has a bluish or greenish tint, it may have a cool color temperature. Decreasing the Temperature filter can shift the color balance towards warmer colors, resulting in a more yellow or orange tint.
+
+Most photo editing software includes a Temperature filter that allows you to adjust the color temperature of an image. Typically, this filter will have a slider that allows you to increase or decrease the temperature by a certain amount. Some software may also include a Tint filter, which allows you to adjust the balance between magenta and green tones in the image.
+
+When using the Temperature filter, it is important to consider the mood or atmosphere you want to create with the image. Warmer colors can create a sense of intimacy, while cooler colors can create a sense of detachment or distance. It is also important to consider how changes to the color temperature will affect other aspects of the image, such as the brightness and contrast.</string>
+    <string name="grayscale">The Grayscale filter is a type of image filter that converts a color image into a black and white image. Specifically, it removes the color information from each pixel in the image, leaving only the brightness or luminance value.
+
+The Grayscale filter works by calculating the average luminance value of each pixel in the color image and then using that value to create a new grayscale pixel. This results in a black and white image that still retains the overall tonal values and contrast of the original color image, but without the distraction of color.
+
+Grayscale images are commonly used in photography and graphic design for their simplicity and versatility. They can be used to create high-contrast images with strong graphical impact, or to convey a sense of nostalgia or timelessness. Grayscale images can also be easier to print and reproduce than color images.
+
+Most photo editing software includes a Grayscale filter that allows you to convert an image to black and white. Typically, this filter will have a single button or option that you can select to apply the filter. Some software may also include options for adjusting the contrast or brightness of the resulting grayscale image.
+
+When using the Grayscale filter, it is important to consider the impact that the lack of color will have on the image. Without color, the image may feel more abstract or removed from reality, and it may be harder to convey specific moods or emotions. However, grayscale images can also be a powerful tool for emphasizing the formal qualities of an image, such as texture, pattern, and contrast.</string>
+    <string name="crossProcess">The CrossProcess filter is a type of image filter that simulates the look of a photographic process called cross-processing. Cross-processing is a technique that involves developing photographic film in a chemical solution that is not intended for that type of film. This results in unusual and unpredictable color shifts and tonal variations, which can create a unique and artistic look.
+
+The CrossProcess filter works by shifting the color balance of an image towards a range of colors that are not typically associated with that image. Specifically, it usually increases the saturation and contrast of reds, yellows, and greens, while decreasing the saturation and contrast of blues and cyans. This results in an image with a highly stylized and colorful look, with a strong emphasis on warm, vibrant colors.
+
+Most photo editing software includes a CrossProcess filter that allows you to apply this effect to an image. Typically, this filter will have a slider or a set of options that you can use to adjust the intensity of the effect. Some software may also include additional options for fine-tuning the color balance and contrast of the image.
+
+When using the CrossProcess filter, it is important to consider the impact that the strong color shifts will have on the image. This effect can be used to create a bold and striking look, but it can also overwhelm the image and make it appear artificial or unnatural. As with any image filter, it is important to experiment with different settings and find the right balance for the image you are working on.</string>
+    <string name="documentary">The Documentary filter is a type of image filter that simulates the look of documentary-style photography. Documentary photography is a genre that focuses on capturing real-life situations and events in an objective and truthful way, often with an emphasis on social and political issues.
+
+The Documentary filter works by desaturating the colors in an image and increasing the contrast and clarity. This results in an image with a stark, gritty look, with a focus on the textures and details of the subject matter. The overall effect is intended to create a sense of realism and authenticity, and to convey the rawness and immediacy of the moment.
+
+Most photo editing software includes a Documentary filter that allows you to apply this effect to an image. Typically, this filter will have a set of options that you can use to adjust the intensity of the effect and to fine-tune the contrast and clarity. Some software may also include additional options for adjusting the saturation and hue of the image.
+
+When using the Documentary filter, it is important to consider the subject matter and context of the image. This effect can be used to create a powerful and evocative look, particularly for images that deal with social or political issues. However, it can also be overused or applied inappropriately, and it may not be appropriate for all types of images. As with any image filter, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="duoTone">The Duotone filter is a type of image filter that converts an image into a two-tone version, usually using a combination of black and another color. This results in an image that has a striking and dramatic look, with a strong emphasis on the contrast between the two tones.
+
+The Duotone filter works by mapping the colors in an image to the selected duotone colors. Typically, the darker areas of the image are mapped to the darker duotone color, while the lighter areas are mapped to the lighter duotone color. This results in an image with a simplified color palette and a strong emphasis on the tonal values and contrast.
+
+Most photo editing software includes a Duotone filter that allows you to apply this effect to an image. Typically, this filter will have a set of options that you can use to select the duotone colors and adjust the contrast and brightness of the resulting image. Some software may also include additional options for adjusting the tonal values and contrast of the image.
+
+When using the Duotone filter, it is important to consider the impact that the limited color palette will have on the image. This effect can be used to create a bold and dramatic look, particularly for images that have strong graphical elements or high contrast. However, it may not be appropriate for all types of images, and it can be overused or applied inappropriately. As with any image filter, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="tint">The Tint filter is a type of image filter that adds a color tint to an image. Tinting involves adding a semi-transparent color layer to an image to give it a particular color cast or hue. This can be used to create a specific mood or atmosphere in an image, or to enhance certain colors and tones.
+
+The Tint filter works by adding a color cast to the image while maintaining the original brightness and contrast. Typically, the tint color is applied evenly across the entire image, although some software may allow you to apply the tint selectively to certain areas of the image.
+
+Most photo editing software includes a Tint filter that allows you to apply this effect to an image. Typically, this filter will have a set of options that you can use to select the tint color and adjust the intensity of the effect. Some software may also include additional options for adjusting the hue, saturation, and brightness of the image.
+
+When using the Tint filter, it is important to consider the impact that the color tint will have on the image. This effect can be used to create a particular mood or atmosphere, such as a warm, golden tone for a sunset scene or a cool, blue tone for a wintery landscape. However, it can also be overused or applied inappropriately, and it may not be appropriate for all types of images. As with any image filter, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="fill_light">The Fill-Light filter is a type of image filter that is used to brighten the shadows in an image, while preserving the highlight detail. The filter is often used to balance the exposure of an image, and can be particularly useful in images where the lighting conditions are uneven or where there are deep shadows.
+
+The Fill-Light filter works by adjusting the brightness of the darker areas of an image, typically using a simple linear or non-linear algorithm. This can help to reveal details in the shadows and to bring out the textures and contrast in the image. The filter is often used in conjunction with other image editing tools, such as exposure and contrast adjustments, to fine-tune the overall look of the image.
+
+Most photo editing software includes a Fill-Light filter that allows you to apply this effect to an image. Typically, this filter will have a set of options that you can use to adjust the intensity of the effect and to fine-tune the brightness and contrast of the resulting image.
+
+When using the Fill-Light filter, it is important to consider the impact that the adjustment will have on the overall look of the image. While the filter can be a useful tool for balancing the exposure and improving the overall quality of an image, it can also be overused or applied inappropriately. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="fishEye">The FishEye filter is a type of image filter that distorts the image, creating a circular, "fish-eye" effect. The filter simulates the look of a fisheye lens, which is a wide-angle lens that creates a highly distorted, hemispherical projection of the image.
+
+The FishEye filter works by applying a non-linear distortion to the image, typically using a mathematical algorithm that simulates the distortion created by a fisheye lens. The result is an image that appears to bulge outwards towards the edges, with a distorted, curving perspective.
+
+Most photo editing software includes a FishEye filter that allows you to apply this effect to an image. Typically, this filter will have a set of options that you can use to adjust the intensity of the effect and to fine-tune the distortion parameters. Some software may also include additional options for adjusting the perspective, cropping, or resizing the image.
+
+When using the FishEye filter, it is important to consider the impact that the distortion will have on the overall look of the image. While the filter can be a fun and creative tool for adding a unique look to an image, it can also be overused or applied inappropriately. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="grain">The Grain filter is a type of image filter that adds a film grain effect to an image, simulating the look of traditional film photography. The filter adds a layer of noise to the image, giving it a textured, organic look that can be used to create a vintage or retro aesthetic.
+
+The Grain filter works by adding a layer of noise to the image, typically using a random noise pattern that simulates the look of film grain. The result is an image that appears to have a subtle, granular texture, with a slightly softer and more organic feel than a perfectly smooth digital image.
+
+Most photo editing software includes a Grain filter that allows you to apply this effect to an image. Typically, this filter will have a set of options that you can use to adjust the intensity of the effect and to fine-tune the size and shape of the noise pattern. Some software may also include additional options for adjusting the color and contrast of the resulting image.
+
+When using the Grain filter, it is important to consider the impact that the texture will have on the overall look of the image. While the filter can be a useful tool for adding a vintage or retro look to an image, it can also be overused or applied inappropriately. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="highlight">The Highlight filter is a type of image filter that is used to adjust the brightness of the highlights in an image, while preserving the detail in the shadow areas. This filter can be used to balance the exposure of an image, particularly when there is a high contrast between the bright and dark areas.
+
+The Highlight filter works by adjusting the brightness of the brighter areas of an image, typically using a simple linear or non-linear algorithm. This can help to bring out the detail and texture in the highlights and to reduce the overall brightness of the image. The filter is often used in conjunction with other image editing tools, such as exposure and contrast adjustments, to fine-tune the overall look of the image.
+
+Most photo editing software includes a Highlight filter that allows you to apply this effect to an image. Typically, this filter will have a set of options that you can use to adjust the intensity of the effect and to fine-tune the brightness and contrast of the resulting image.
+
+When using the Highlight filter, it is important to consider the impact that the adjustment will have on the overall look of the image. While the filter can be a useful tool for balancing the exposure and improving the overall quality of an image, it can also be overused or applied inappropriately. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="lomoish">The Lomoish filter is a type of image filter that is designed to emulate the look of Lomography, a style of photography that emphasizes the use of cheap and low-fidelity cameras to create a unique, artistic aesthetic. The filter typically creates high-contrast images with saturated colors, strong vignetting, and a slightly blurred or distorted look.
+
+The Lomoish filter works by applying a series of adjustments to the image, typically including contrast, saturation, color balance, and vignetting effects. The result is an image that appears to have been captured with a low-fidelity camera, with a unique and artistic quality.
+
+Most photo editing software includes a Lomoish filter that allows you to apply this effect to an image. Typically, this filter will have a set of options that you can use to adjust the intensity of the effect and to fine-tune the color balance and vignetting parameters. Some software may also include additional options for adjusting the brightness, contrast, and sharpness of the resulting image.
+
+When using the Lomoish filter, it is important to consider the impact that the adjustments will have on the overall look of the image. While the filter can be a fun and creative tool for adding a unique aesthetic to an image, it can also be overused or applied inappropriately. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="flip_horizontal">The Flip Horizontally filter is a type of image filter that is used to flip an image horizontally, creating a mirror image of the original. This filter is often used in image editing to correct images that were accidentally captured in reverse, or to create artistic effects by reversing the orientation of the image.
+
+The Flip Horizontally filter works by reflecting the image along a vertical axis, creating a mirror image of the original. This can be done using a simple algorithm that reverses the order of the pixels in each row of the image, or by using more sophisticated methods that take into account the color and brightness of adjacent pixels.
+
+Most photo editing software includes a Flip Horizontally filter that allows you to apply this effect to an image. Typically, this filter will have a simple toggle or button that you can use to flip the image horizontally. Some software may also include additional options for adjusting the orientation of the image, such as flipping it vertically or rotating it.
+
+When using the Flip Horizontally filter, it is important to consider the impact that the orientation of the image will have on the overall composition and message of the image. While flipping an image horizontally can be a useful tool for correcting orientation issues or creating artistic effects, it can also significantly alter the way that the image is perceived. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="flip_vertical">The Flip Vertically filter is a type of image filter that is used to flip an image vertically, creating an upside-down mirror image of the original. This filter is often used in image editing to correct images that were accidentally captured in reverse, or to create artistic effects by reversing the orientation of the image.
+
+The Flip Vertically filter works by reflecting the image along a horizontal axis, creating an upside-down mirror image of the original. This can be done using a simple algorithm that reverses the order of the pixels in each column of the image, or by using more sophisticated methods that take into account the color and brightness of adjacent pixels.
+
+Most photo editing software includes a Flip Vertically filter that allows you to apply this effect to an image. Typically, this filter will have a simple toggle or button that you can use to flip the image vertically. Some software may also include additional options for adjusting the orientation of the image, such as flipping it horizontally or rotating it.
+
+When using the Flip Vertically filter, it is important to consider the impact that the orientation of the image will have on the overall composition and message of the image. While flipping an image vertically can be a useful tool for correcting orientation issues or creating artistic effects, it can also significantly alter the way that the image is perceived. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="negative">The Negative filter is a type of image filter that creates a photographic negative of an image. When a photographic negative is developed, the colors and brightness values in the image are inverted, resulting in an image that has the opposite color values of the original. For example, areas of the original image that were white will appear black in the negative, while areas that were black will appear white.
+
+The Negative filter works by inverting the colors and brightness values of an image in a similar way. This can be done using a simple algorithm that subtracts the color and brightness values of each pixel in the original image from a maximum value (usually 255 for an 8-bit image), resulting in a negative image with inverted colors.
+
+Most photo editing software includes a Negative filter that allows you to apply this effect to an image. Typically, this filter will have a simple toggle or button that you can use to apply the negative effect to the image. Some software may also include additional options for adjusting the contrast and brightness of the negative image, or for converting the negative image back to a positive image.
+
+The Negative filter can be used to create artistic effects or to correct images that were accidentally captured with incorrect exposure or color balance settings. When using the Negative filter, it is important to consider the impact that the inverted colors will have on the overall composition and message of the image. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="posterize">The Posterize filter is a type of image filter that reduces the number of colors in an image to create a poster-like effect. This filter is often used in image editing to create stylized or artistic effects, and to simplify the colors and shapes in an image for a more graphic or abstract look.
+
+The Posterize filter works by dividing the color range of an image into a set number of color levels, typically between 2 and 256. Each pixel in the image is then mapped to the nearest color level, resulting in an image with a reduced color depth. For example, if the posterize filter is set to 8 levels, each color channel (red, green, and blue) in the image will be divided into 8 discrete levels, resulting in an image with 512 (8 x 8 x 8) possible color combinations.
+
+Most photo editing software includes a Posterize filter that allows you to apply this effect to an image. Typically, this filter will have a simple slider or control that you can use to adjust the number of color levels in the image. Some software may also include additional options for adjusting the contrast and brightness of the posterized image, or for applying other effects such as a halftone or stipple pattern.
+
+The Posterize filter can be used to create a wide range of artistic effects, from simple and graphic to complex and textured. When using the Posterize filter, it is important to consider the impact that the reduced color depth will have on the overall composition and message of the image. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="rotate">The Rotate filter is a type of image filter that allows you to rotate an image by a certain number of degrees. This filter is often used in image editing to adjust the orientation of an image or to correct for images that were captured at an angle.
+
+The Rotate filter works by applying a transformation matrix to the image that rotates the image by a specified number of degrees. This transformation matrix is a mathematical formula that describes how the pixels in the image should be transformed to achieve the desired rotation.
+
+Most photo editing software includes a Rotate filter that allows you to apply this effect to an image. Typically, this filter will have a simple control or slider that you can use to adjust the rotation angle of the image. Some software may also include additional options for adjusting the aspect ratio of the image or for cropping the image after it has been rotated.
+
+The Rotate filter can be used to correct for images that were accidentally captured at an angle, to adjust the orientation of an image for a specific output format or orientation, or to create artistic effects by rotating the image at unusual angles. When using the Rotate filter, it is important to consider the impact that the rotation will have on the overall composition and message of the image. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall mood and message of the image.</string>
+    <string name="saturate">The Saturate filter is a type of image filter that adjusts the saturation or intensity of the colors in an image. This filter is often used in image editing to enhance or reduce the vibrancy of the colors in an image, or to create a more subdued or monochromatic look.
+
+The Saturate filter works by adjusting the color intensity of each pixel in the image. When the filter is applied, the saturation level of the image is increased or decreased by a certain amount, depending on the direction of the adjustment. This can result in an image that appears more vivid and vibrant, or one that appears more muted or washed out.
+
+Most photo editing software includes a Saturate filter that allows you to adjust the saturation level of an image. Typically, this filter will have a simple control or slider that you can use to increase or decrease the saturation level of the image. Some software may also include additional options for adjusting the contrast and brightness of the image, or for applying other color effects such as a sepia or black and white conversion.
+
+The Saturate filter can be used to create a wide range of artistic effects, from subtle and natural-looking enhancements to bold and dramatic color transformations. When using the Saturate filter, it is important to consider the impact that the color adjustments will have on the overall mood and message of the image. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall composition and visual impact of the image.</string>
+    <string name="sepia">The Sepia filter is a type of image filter that gives an image a warm, vintage look by tinting it with brown or yellow tones. This filter is often used in image editing to create a nostalgic or old-fashioned feel, or to give an image a more artistic or romantic look.
+
+The Sepia filter works by reducing the saturation of the image and applying a brown or yellow tint to the image. This results in an image that appears aged or antiqued, with a muted color palette and a softer, more diffuse appearance.
+
+Most photo editing software includes a Sepia filter that allows you to apply this effect to an image. Typically, this filter will have a simple control or slider that you can use to adjust the intensity of the Sepia effect. Some software may also include additional options for adjusting the contrast and brightness of the image, or for adding additional color toning effects.
+
+The Sepia filter can be used to create a variety of artistic effects, from subtle and understated vintage looks to bold and dramatic toning effects. When using the Sepia filter, it is important to consider the impact that the toning will have on the overall mood and message of the image. As with any image editing tool, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall composition and visual impact of the image.</string>
+    <string name="sharpen">The Sharpen filter is a type of image filter that is used to improve the clarity and detail of an image. This filter works by increasing the contrast of edges and fine details in the image, making them appear sharper and more defined.
+
+When applied, the Sharpen filter analyzes the contrast between adjacent pixels in the image and then adjusts the brightness and contrast of these pixels to create the illusion of increased sharpness. Depending on the software used, the Sharpen filter may have various settings to control the amount and intensity of the sharpening effect.
+
+It is important to note that while the Sharpen filter can improve the appearance of an image, it cannot create new detail that was not originally present in the image. Over-sharpening an image can also create a "halo" effect around edges, which can make an image look unnatural or processed.
+
+The Sharpen filter is commonly used in image editing to improve the sharpness and clarity of photographs that may have been slightly out of focus or blurry. It can also be used to enhance the detail in low-resolution images or to improve the appearance of scanned documents.
+
+When using the Sharpen filter, it is important to use it selectively and to adjust the settings to achieve the desired effect. Overuse of the filter can result in an unnatural and over-processed look, so it is important to use it in moderation and to consider the overall composition and visual impact of the image.</string>
+    <string name="vignette">The Vignette filter is a type of image filter that adds a darkened border around the edges of an image. This filter is named after the photographic technique of vignetting, which involves intentionally darkening the edges of a photograph to draw attention to the center of the image.
+
+When applied, the Vignette filter darkens the edges of the image while leaving the center portion of the image untouched. This creates a subtle but effective way to draw attention to the subject in the center of the image, making it appear more prominent and visually striking.
+
+The Vignette filter is commonly used in image editing to create a sense of depth and dimensionality in an image. It can also be used to create a sense of drama or mood, by adding a subtle or pronounced vignette effect to the image.
+
+Most photo editing software includes a Vignette filter that allows you to apply this effect to an image. Typically, this filter will have a simple control or slider that you can use to adjust the size and intensity of the vignette effect. Some software may also include additional options for adjusting the shape and position of the vignette.
+
+When using the Vignette filter, it is important to use it thoughtfully and selectively, and to consider the impact that it will have on the overall composition and visual impact of the image. The vignette effect should be used to enhance the subject and draw attention to the center of the image, rather than overwhelming it or distracting from the main focus of the image.</string>
+
 
 
 

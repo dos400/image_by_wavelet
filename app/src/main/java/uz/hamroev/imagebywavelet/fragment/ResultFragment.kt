@@ -287,7 +287,8 @@ class ResultFragment : Fragment() {
         val uri = Uri.parse(path)
         val shareIntent = Intent(Intent.ACTION_SEND)
         shareIntent.type = "image/*"
-        shareIntent.putExtra(Intent.EXTRA_TEXT, "nimadir texti bo'ladi bu yerda")
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "IMAGE BY WAVELET\n" +
+                "https://play.google.com/store/apps/details?id=uz.hamroev.imagebywavelet")
         shareIntent.putExtra(Intent.EXTRA_STREAM, uri)
         startActivity(Intent.createChooser(shareIntent, "share image"))
     }

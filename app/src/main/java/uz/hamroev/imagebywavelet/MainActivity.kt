@@ -69,6 +69,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun showSystemBars() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            val decorView = window.decorView
+            val windowInsetsController = decorView.windowInsetsController ?: return
+            windowInsetsController.systemBarsBehavior =
+                WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            windowInsetsController.hide(WindowInsets.Type.systemBars())
+        } else {
+            window?.decorView?.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
+        }
+    }
+
     @RequiresApi(Build.VERSION_CODES.Q)
     private fun startAnimation() {
         val animTeam = AnimationUtils.loadAnimation(this, R.anim.anim_intro_team)

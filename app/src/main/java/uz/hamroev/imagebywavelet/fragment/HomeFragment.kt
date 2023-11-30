@@ -7,11 +7,10 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.mukesh.imageproccessing.filters.*
 import uz.hamroev.imagebywavelet.R
@@ -44,6 +43,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
         binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
+
 
 
         binding.menuButton.setOnClickListener {
@@ -273,5 +273,8 @@ class HomeFragment : Fragment() {
             context.resources.displayMetrics
         )
     }
+
+
+
 
 }

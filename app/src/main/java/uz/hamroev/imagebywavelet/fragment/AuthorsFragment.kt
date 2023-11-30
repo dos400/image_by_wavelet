@@ -40,13 +40,17 @@ class AuthorsFragment : Fragment() {
         list = ArrayList()
         list.clear()
         when (Cache.language) {
+
             "uz" -> {
                 list.add(
                     MyUser(
-                        "Nuraliyev \nFaxriddin \nMurodillayevich",
-                        "Doctor of Science\n" +
-                                "Professor of the Department of Audiovisual Technologies",
-                        R.drawable.ic_nuraliyev_faxriddin
+                        "Beknazarova\n" +
+                                "Saida\n" +
+                                "Safibullayevna",
+                        "Professor\n" +
+                                "t.f.d.\n" +
+                                "Muhammad al-Xorazmiy nomidagi Toshkent Аxborot texnologiyalari universiteti Аudiovizual texnologiyalar kafedrasi muduri",
+                        R.drawable.ic_saida
                     )
                 )
                 list.add(
@@ -57,13 +61,14 @@ class AuthorsFragment : Fragment() {
                     )
                 )
             }
+
             "ru" -> {
                 list.add(
                     MyUser(
-                        "Nuraliyev \nFaxriddin \nMurodillayevich",
-                        "Doctor of Science\n" +
-                                "Professor of the Department of Audiovisual Technologies",
-                        R.drawable.ic_nuraliyev_faxriddin
+                        "Бекназарова \nСаида \nСафибуллаевна",
+                        "Доктор технических наук, Профессор\n" +
+                                "Заведующий кафедрой Аудиовизуальных технологий Ташкентского университета информационных технологий имени Мухаммада ал-Хоразмий",
+                        R.drawable.ic_saida
                     )
                 )
                 list.add(
@@ -75,12 +80,15 @@ class AuthorsFragment : Fragment() {
                 )
 
             }
+
             "en" -> {
                 list.add(
                     MyUser(
-                        "Nuraliyev \nFaxriddin \nMurodillayevich",
-                        "Doctor of Science\nProfessor of the Department of Audiovisual Technologies",
-                        R.drawable.ic_nuraliyev_faxriddin
+                        "Beknazarova\n" +
+                                "Saida\n" +
+                                "Safibullaevna",
+                        "Professor, DSc of technical science/ Head of department TUIT",
+                        R.drawable.ic_saida
                     )
                 )
                 list.add(
